@@ -9,18 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.0",
+    "@tabler/icons-react": "^3.10.0",
+    "animejs": "^3.2.2",
+    "bcrypt": "^5.1.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.2",
+    "mini-svg-data-uri": "^1.4.4",
+    "mongoos": "^0.0.1-security",
+    "mongoose": "^8.5.3",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "simplex-noise": "^4.0.2",
+    "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "typescript": "^5"
   }
 }
