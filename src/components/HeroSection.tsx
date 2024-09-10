@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
         <div className="p-4 relative z-10 w-full text-center hide">
             <Spotlight
-        className="-top-40 left-[-50px] md:left-60 md:-top-20"
+        className="-top-40 left-[-50px] md:left-60 md:-top-20 hidden md:block"
         fill="rgb(270 270 270 / 0.7)"
       />
             <h1 className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text 

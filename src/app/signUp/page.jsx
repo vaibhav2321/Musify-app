@@ -1,5 +1,7 @@
+"use client"
+
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import { useRouter } from 'next/router';
 
 export default function signUp() {
   const [name, setName] = useState('');
@@ -38,8 +40,8 @@ export default function signUp() {
   return (
     <>
     {/* <Navbar/> */}
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-md w-80">
+    <div className="min-h-screen flex items-center justify-center bg-slate-950">
+      <form onSubmit={handleSubmit} className="bg-white p-6 rounded lg-w-1/3">
         <h1 className="text-2xl font-bold mb-6">Sign Up</h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         {success && <p className="text-green-500 mb-4">{success}</p>}
