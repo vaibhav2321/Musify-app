@@ -1,5 +1,7 @@
+"use client"
+
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation'
 
 export default function signUp() {
   const [name, setName] = useState('');
@@ -13,7 +15,7 @@ export default function signUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Ensure the URL matches your API route
+    // Ensure the URL matches your API routejjju
     const res = await fetch('/api/signUp', {
       method: 'POST',
       headers: {
