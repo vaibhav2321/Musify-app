@@ -53,6 +53,8 @@ const config: Config = {
     extend: {
       boxShadow: {
         input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
+        white: '0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.1)',
+        'slate-400': '0 4px 6px rgba(156, 163, 175, 0.1), 0 1px 3px rgba(156, 163, 175, 0.1)',
       },
       animation:{
         spinSlow: "spin 1.5s linear infinite",
