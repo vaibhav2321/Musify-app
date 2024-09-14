@@ -12,7 +12,7 @@ export default function signUp() {
   const [success, setSuccess] = useState('');
   const router = useRouter();
 
-  const handleSubmit = async (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
 
     // Ensure the URL matches your API routejjju
@@ -40,9 +40,9 @@ export default function signUp() {
   return (
     <>
     {/* <Navbar/> */}
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-md w-80">
-        <h1 className="text-2xl font-bold mb-6">Sign Up</h1>
+    <div className="min-h-screen flex items-center justify-center bg-slate-950">
+      <form onSubmit={handleSignup} className="bg-slate-400 p-6 rounded w-1/3">
+        <h1 className="text-2xl font-bold mb-6 text-black">Sign Up</h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         {success && <p className="text-green-500 mb-4">{success}</p>}
         <div className="mb-4">
@@ -53,7 +53,7 @@ export default function signUp() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border rounded border-blue-500"
           />
         </div>
         <div className="mb-4">
@@ -64,7 +64,7 @@ export default function signUp() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border rounded border-blue-500"
           />
         </div>
         <div className="mb-4">
@@ -75,7 +75,7 @@ export default function signUp() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border rounded border-blue-500"
           />
         </div>
         <div className="mb-4">
@@ -86,7 +86,7 @@ export default function signUp() {
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border rounded border-blue-500"
           />
         </div>
         <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
