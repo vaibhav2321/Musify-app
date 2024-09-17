@@ -1,0 +1,124 @@
+.container {
+    background-color: rgb(15, 25, 35);
+    display: flex;
+    /* justify-content: center; */
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+.firstSection {
+    display: none;
+    width: 15%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(0, 82, 144);
+}
+
+.middleSection{
+    width: 70%;
+    margin: 0 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.profileBackgroundImg {
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+}
+
+.courses {
+    height: 60%;
+    background-color: rgb(8 34 53);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilebox1 {
+    height: 11rem;
+    width: 11rem;
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    border-radius: 50%;
+    border-bottom: 3px solid rgb(0, 82, 144);
+    border-top: 3px solid rgb(0, 82, 144);
+    padding: 2px;
+    animation: rotateBox 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilebox {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: 27.5%;
+    left: 20%;
+}
+
+.profileImg {
+    height: 100%; 
+    width: 100%;
+    border-radius: 50% !important;
+    position: relative;
+}
+
+@keyframes rotateBox {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.text3d {
+    font-size: 50px;
+    color: rgb(8 34 73);
+    font-family: Arial Black, Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(8 34 73),
+                 1px 1px 0 rgb(-8,71,74),
+                 2px 2px 0 rgb(-8,71,74),
+                 3px 3px 0 rgb(-8,71,74),
+                 4px 4px 0 rgb(-8,71,74),
+                 5px 5px 0 rgb(-8,71,74),
+                 6px 6px 0 rgb(-8,71,74),
+                 7px 7px 0 rgb(-8,71,74),
+                 8px 8px  0 rgb(-85,-67,97),
+                 9px 9px 8px rgba(0,0,0,0.6),
+                 9px 9px 1px rgba(0,0,0,0.5),
+                 0px 0px 8px rgba(0,0,0,.2);
+}
+
+
+.secondSection {
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(8 34 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1000px){
+    .firstSection{
+        display: none;
+    }
+    .secondSection{
+        display: none;
+    }
+    .middleSection{
+        width: 100%;
+        background-color: red;
+    }
+}

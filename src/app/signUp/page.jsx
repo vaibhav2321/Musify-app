@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'
+import Link from 'next/link';
 
 export default function signUp() {
   const [name, setName] = useState('');
@@ -89,6 +90,9 @@ export default function signUp() {
             className="w-full px-3 py-2 border rounded border-blue-500"
           />
         </div>
+        <Link href="/signUp" className='flex justify-end mb-1'>
+          <span className='text-red-600 text-sm hover:text-red-400'>Already have account?</span>
+        </Link>
         <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
           Sign Up
         </button>

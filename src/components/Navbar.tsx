@@ -47,10 +47,10 @@ const Navbar = ({ className }: { className?: string }) => {
         </div>
         {dropdownVisible && (  
           <div className="absolute right-0 mt-12 w-48  rounded-md shadow-lg z-20">
-            <Link href="/signUp">
+            <Link href="/Login">
               <div className="block m-1 bg-slate-900 px-4 py-2 hover:font-semibold text-white hover:text-black hover:bg-gray-200 rounded-md">Login/Signup</div>
             </Link>
-            <Link href="/Login">
+            <Link href="/Account">
               <div className="block m-1 bg-slate-900 px-4 py-2 hover:font-semibold text-white hover:text-black hover:bg-gray-200 rounded-md">Account</div>
             </Link>
           </div>

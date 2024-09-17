@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React from 'react'
 import { useState } from 'react'
 
@@ -59,6 +60,9 @@ const Page = () => {
             className="w-full px-3 py-2 border rounded border-blue-500 caret-black" 
           />
         </div>
+        <Link href="/signUp" className='flex justify-end'>
+          <span className='text-red-600 text-sm hover:text-red-400'>Don't have any account?</span>
+        </Link>
         <button 
           type='submit' 
           className={`w-full bg-blue-500 text-white py-2 my-2 rounded hover:bg-blue-600 ${loading ? 'cursor-progress' :'cursor-pointer'}`}
