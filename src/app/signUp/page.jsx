@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'
 import Link from 'next/link';
+import style from './styles.module.css'
 
 export default function signUp() {
   const [name, setName] = useState('');
@@ -42,7 +43,7 @@ export default function signUp() {
     <>
     {/* <Navbar/> */}
     <div className="min-h-screen flex items-center justify-center bg-slate-950">
-      <form onSubmit={handleSignup} className="bg-slate-400 p-6 rounded w-1/3">
+      <form onSubmit={handleSignup} className="p-6 rounded w-1/3" id={style.login_frm}>
         <h1 className="text-2xl font-bold mb-6 text-black">Sign Up</h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         {success && <p className="text-green-500 mb-4">{success}</p>}

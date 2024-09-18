@@ -56,6 +56,9 @@ const config: Config = {
         white: '0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.1)',
         'slate-400': '0 4px 6px rgba(156, 163, 175, 0.1), 0 1px 3px rgba(156, 163, 175, 0.1)',
       },
+      boxShadowa_login_signup: {
+        'custom-shadow': '20px 20px 60px #749dc4, -20px -20px 60px #9ed5ff',
+      },
       animation:{
         spinSlow: "spin 1.5s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",

@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React from 'react'
 import { useState } from 'react'
+import style from './styles.module.css'
 
 const Page = () => {
   const [email, setEmail] = useState('');
@@ -37,7 +38,7 @@ const Page = () => {
 
   return (
     <div className='min-h-screen flex items-center justify-center bg-slate-950'>
-      <form onSubmit={handleLogin} className='bg-slate-400 p-6 rounded w-1/3'>
+      <form onSubmit={handleLogin} className=' p-6 rounded w-1/3 ' id={style.login_frm}>
         <h1 className='font-bold text-2xl text-black mb-6'>Login</h1>
         {error && <p className='text-red-800 text-sm'>{error}</p>}
         <div className='mb-4'>
